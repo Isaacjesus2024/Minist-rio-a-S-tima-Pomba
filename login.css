@@ -1,0 +1,133 @@
+/* Fundo igual ao site */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('/images/igreja.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: zoom 20s ease-in-out infinite alternate;
+}
+
+/* efeito de zoom suave */
+@keyframes zoom {
+    from { transform: scale(1); }
+    to   { transform: scale(1.05); }
+}
+
+/* Wrapper */
+.login-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+}
+
+/* Card */
+.login-card {
+    background: #ffffffdd;
+    padding: 35px;
+    width: 360px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #1c1335;
+    position: relative;
+}
+
+/* Animação de fade */
+.animate-fade {
+    animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Logo */
+.logo {
+    width: 120px;
+    margin-bottom: 15px;
+}
+
+/* Mascote */
+.mascote-bounce {
+    width: 80px;
+    animation: mascoteJump 2s infinite ease-in-out;
+}
+
+@keyframes mascoteJump {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0); }
+}
+
+/* Título */
+h2 {
+    margin: 10px 0 20px;
+    font-size: 26px;
+}
+
+/* Inputs */
+input {
+    width: 333px;
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: 7px;
+    border: 1px solid #aaa;
+}
+
+/* Botão Login */
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background: #111;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.btn-login:hover {
+    background: #333;
+}
+
+/* Link de recuperar senha */
+.recuperar {
+    display: block;
+    margin-top: 12px;
+    color: #111;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.recuperar:hover {
+    text-decoration: underline;
+}
+
+/* Ícones sociais */
+.social-icons {
+    margin-top: 18px;
+}
+
+.icon {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 5px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    filter: brightness(1.3);
+}
+
